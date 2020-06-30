@@ -2,6 +2,7 @@
 
 .menu-btn {
   position: absolute;
+
   z-index: 3;
   right: 35px;
   top: 35px;
@@ -12,7 +13,7 @@
     width: 28px;
     height: 4px;
     margin: 0px 0px 5px 0px;
-    background: white;
+    background: text-color($primary-color);
     @include easeOut;
   }
 
@@ -47,6 +48,10 @@
         }
       }
     }
+  }
+
+  &:hover > .btn-line {
+    background: $secondary-color;
   }
 }
 
@@ -141,9 +146,20 @@
       }
     }
 
+    .nav-link {
+      color: text-color($primary-color);
+    }
+
     &.show {
       transform: translate(0, 0);
     }
+  }
+
+  .change-color {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
   }
 }
 
