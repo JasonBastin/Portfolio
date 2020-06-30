@@ -1,9 +1,13 @@
+// Exporting variables and mixins as a partial config file to
+// the main file to be processed into css
+
 $primary-color: #444;
 $secondary-color: rgb(243, 178, 39);
 $show-home-image: true;
 $home-image: url(/dist/img/background.jpg) no-repeat center center fixed;
 $background-opacity: 0.6;
 
+// Mixin for consitant transitions
 @mixin easeOut {
   -webkit-transition: all 1s ease-out;
   -moz-transition: all 1s ease-out;
@@ -11,6 +15,7 @@ $background-opacity: 0.6;
   transition: all 1s ease-out;
 }
 
+// Mixin background see-through overlay and background image if on home screen
 @mixin background {
   @if $show-home-image {
     &#bg-img {
@@ -19,7 +24,7 @@ $background-opacity: 0.6;
       background-attachment: fixed;
 
       &:after {
-        content:'';
+        content: "";
         position: absolute;
         top: 0;
         right: 0;
@@ -29,5 +34,31 @@ $background-opacity: 0.6;
         z-index: -1;
       }
     }
+  }
+}
+
+// Media Query Mixins
+
+@mixin mediaSm {
+  @media screen and (max-width: 500px) {
+    @content;
+  }
+}
+
+@mixin mediaMd {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mediaLg {
+  @media screen and (min-width: 769) and (max-width: 1170px) {
+    @content;
+  }
+}
+
+@mixin mediaXl {
+  @media screen and (min-width: 1171) {
+    @content;
   }
 }
