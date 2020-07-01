@@ -2,7 +2,7 @@
 // the main file to be processed into css
 
 $primary-color: rgb(87, 87, 87);
-$secondary-color: rgb(84, 141, 155);
+$secondary-color: rgb(99, 164, 201);
 $show-home-image: true;
 $home-image: url(/dist/img/background.jpg) no-repeat center center fixed;
 $background-opacity: 0.6;
@@ -68,7 +68,7 @@ $background-opacity: 0.6;
 }
 
 @mixin mediaXl {
-  @media screen and (min-width: 1171) {
+  @media screen and (min-width: 1171px) {
     @content;
   }
 }
