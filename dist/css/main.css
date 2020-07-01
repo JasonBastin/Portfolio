@@ -161,7 +161,9 @@ h3 {
   h3.sm-heading {
     display: inline-block;
     margin-bottom: 1rem;
-    padding: 0.2rem 2.5rem 0.2rem 2.5rem;
+    width: 50vw;
+    min-width: 40vw;
+    padding: 0.2rem 2rem;
     background: rgba(107, 168, 204, 0.2); }
 
 a {
@@ -244,6 +246,25 @@ main {
     .projects img:hover {
       opacity: 0.6;
       border: 3px #63a4c9 solid; }
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 50vh; }
+  .contacts .contact {
+    border: 2px white solid;
+    padding: 0.5rem 0.7rem; }
+    .contacts .contact:hover {
+      -webkit-transition: all 1s ease-out;
+      -moz-transition: all 1s ease-out;
+      -o-transition: all 1s ease-out;
+      transition: all 1s ease-out;
+      background: rgba(0, 0, 0, 0.5);
+      border: 2px #63a4c9 solid; }
+    .contacts .contact h2 span {
+      color: #63a4c9; }
 
 .btn, .btn-light, .btn-dark {
   display: block;

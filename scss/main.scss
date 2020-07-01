@@ -35,7 +35,9 @@ h3 {
   &.sm-heading {
     display: inline-block;
     margin-bottom: 1rem;
-    padding: 0.2rem 2.5rem 0.2rem 2.5rem;
+    width: 50vw;
+    min-width: 40vw;
+    padding: 0.2rem 2rem;
     background: rgba(lighten($secondary-color, 2), 0.2);
   }
 }
@@ -148,6 +150,31 @@ main {
     &:hover {
       opacity: 0.6;
       border: 3px $secondary-color solid;
+    }
+  }
+}
+
+// Contacts
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 50vh;
+
+  .contact {
+    border: 2px white solid;
+    padding: 0.5rem 0.7rem;
+
+    &:hover {
+      @include easeOut;
+      background: rgba(0, 0, 0, 0.5);
+      border: 2px $secondary-color solid;
+    }
+
+    h2 span {
+      color: $secondary-color;
     }
   }
 }
