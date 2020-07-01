@@ -30,11 +30,3 @@ function toggleMenu() {
 }
 
 // Set class='current' on nav-item when clicked
-
-navItems.forEach((x) => x.addEventListener("click", setCurrentClass));
-
-function setCurrentClass(e) {
-  console.log(this);
-  navItems.forEach((x) => x.classList.remove("current"));
-  this.classList.add("current");
-}
