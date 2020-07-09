@@ -30,7 +30,7 @@
     .menu-btn.close:hover .btn-line:nth-child(2) {
       background: #da2020; }
   .menu-btn:hover > .btn-line {
-    background: #ca5cbc; }
+    background: #5ccaa5; }
 
 .menu {
   position: fixed;
@@ -62,7 +62,7 @@
       height: 250px; }
       .menu-branding .portrait img {
         border-radius: 0%;
-        border: solid 3px #ca5cbc;
+        border: solid 3px #5ccaa5;
         width: 100%;
         height: 100%; }
   .menu-nav {
@@ -102,14 +102,14 @@
         transition: all 0.3s ease-out;
         transition-delay: 0s; }
         .menu-nav .nav-item:hover a {
-          color: #ca5cbc;
+          color: #5ccaa5;
           transition-delay: 0s;
           -webkit-transition: all 1s ease-out;
           -moz-transition: all 1s ease-out;
           -o-transition: all 1s ease-out;
           transition: all 1s ease-out; }
       .menu-nav .nav-item.current > a {
-        color: #ca5cbc; }
+        color: #5ccaa5; }
     .menu-nav .nav-link {
       color: #fff; }
     .menu-nav.show {
@@ -164,7 +164,7 @@ h3 {
     width: 50vw;
     min-width: 40vw;
     padding: 0.2rem 2rem;
-    background: rgba(205, 100, 191, 0.2); }
+    background: rgba(100, 205, 169, 0.2); }
 
 a {
   color: white;
@@ -176,7 +176,7 @@ header {
   width: 100%; }
 
 .text-secondary {
-  color: #ca5cbc; }
+  color: #5ccaa5; }
 
 main {
   overflow: hidden;
@@ -190,7 +190,7 @@ main {
     main .icons a {
       padding: 0.4rem; }
       main .icons a:hover {
-        color: #ca5cbc;
+        color: #5ccaa5;
         -webkit-transition: all 1s ease-out;
         -moz-transition: all 1s ease-out;
         -o-transition: all 1s ease-out;
@@ -210,7 +210,7 @@ main {
   width: 250px;
   grid-area: bio-img;
   margin: auto;
-  border: #ca5cbc 3px solid; }
+  border: #5ccaa5 3px solid; }
 
 .bio {
   grid-area: bio;
@@ -231,7 +231,7 @@ main {
 .job {
   background: #646464;
   padding: 0.5rem;
-  border-bottom: #ca5cbc 5px solid; }
+  border-bottom: #5ccaa5 5px solid; }
 
 .projects {
   margin-top: 3rem;
@@ -245,7 +245,7 @@ main {
     border: 3px white solid; }
     .projects img:hover {
       opacity: 0.6;
-      border: 3px #ca5cbc solid; }
+      border: 3px #5ccaa5 solid; }
 
 .contacts {
   display: flex;
@@ -262,9 +262,9 @@ main {
       -o-transition: all 1s ease-out;
       transition: all 1s ease-out;
       background: rgba(0, 0, 0, 0.5);
-      border: 2px #ca5cbc solid; }
+      border: 2px #5ccaa5 solid; }
     .contacts .contact h2 span {
-      color: #ca5cbc; }
+      color: #5ccaa5; }
 
 .btn, .btn-light, .btn-dark {
   display: block;
@@ -272,7 +272,7 @@ main {
   border: 0;
   margin-bottom: 0.3rem; }
   .btn:hover, .btn-light:hover, .btn-dark:hover {
-    background: rgba(202, 92, 188, 0.8);
+    background: rgba(92, 202, 165, 0.8);
     color: #000; }
 
 .btn-light {
@@ -282,7 +282,7 @@ main {
   background: #434343; }
 
 footer {
-  background: rgba(202, 92, 188, 0.2);
+  background: rgba(92, 202, 165, 0.2);
   text-align: center;
   padding: 1rem;
   color: #fff;
